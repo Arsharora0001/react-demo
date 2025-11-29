@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: react-eks-demo
+  namespace: argocd
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/your-user/react-eks-demo.git
+    targetRevision: main
+    path: k8s/prod
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

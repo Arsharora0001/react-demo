@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-demo
+  labels:
+    app: react-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: react-demo
+  template:
+    metadata:
+      labels:
+        app: react-demo
+    spec:
+      containers:
+        - name: react-demo
+          image: 123456789012.dkr.ecr.ap-south-1.amazonaws.com/react-eks-demo:latest
+          ports:
+            - containerPort: 80
