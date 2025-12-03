@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         AWS_REGION      = 'ap-south-1'
-        AWS_ACCOUNT_ID  = '123456789012'
+        AWS_ACCOUNT_ID  = '316770681739'
         ECR_REPO        = 'react-eks-demo'
         IMAGE_TAG       = "${BUILD_NUMBER}"
     }
@@ -93,3 +93,4 @@ pipeline {
         // }
     }
 }
+
