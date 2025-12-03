@@ -12,7 +12,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-user/react-eks-demo.git'
+                git branch: 'main', url: 'https://github.com/Arsharora0001/react-demo.git'
             }
         }
 
