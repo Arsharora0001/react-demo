@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: react-demo
-          image: 123456789012.dkr.ecr.ap-south-1.amazonaws.com/react-eks-demo:latest
+          image: 316770681739.dkr.ecr.ap-south-1.amazonaws.com/react-demo:latest
           ports:
             - containerPort: 80
