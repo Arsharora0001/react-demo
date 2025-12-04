@@ -16,8 +16,9 @@ spec:
     spec:
       containers:
         - name: react-demo
-          image: 316770681739.dkr.ecr.ap-south-1.amazonaws.com/react-demo:latest
+          image: awsaccountid.dkr.ecr.ap-south-1.amazonaws.com/react-demo:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
+
 
