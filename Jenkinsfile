@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         AWS_REGION     = "ap-south-1"
-        AWS_ACCOUNT_ID = "316770681739"          // <- tumhara Owner ID
+        AWS_ACCOUNT_ID = ""          / <- tumhara Owner ID
         ECR_REPO       = "react-demo"           // <- ECR repo ka naam
 
         IMAGE_TAG = "latest"
@@ -96,3 +96,4 @@ pipeline {
         }
     }
 }
+
